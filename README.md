@@ -46,18 +46,19 @@ jobs:
 
 ### Inputs
 
-| Input                                   | Description    | Default |
-| ------------- | ------------- | ------------- |
-| `url`  | Jenkins URL including http/https protocol  |  |
-| `job_name` | Jenkins job name to build   | |
-| `username` _(optional)_  | Jenkins username   | |
-| `api_token` _(optional)_  | Jenkins API token   | |
-| `parameters` _(optional)_  | Build parameters in JSON format e.g. `{"field1":"value1"}`   | |
-| `cookies` _(optional)_  | Cookies to include in HTTP requests in JSON format e.g. `{"field1":"value1"}`   | |
-| `wait` _(optional)_  | Should the runner wait for the build to finish and provide ok status   | True |
-| `timeout` _(optional)_  | Timeout in seconds for build to complete   | 600 |
-| `start_timeout` _(optional)_  | Timeout in seconds for build to start | 600 |
-| `interval` _(optional)_  | ow frequently in seconds to query Jenkins for build status  | 5 |
+| Input                        | Description                                                                   | Default       |
+| -------------                | -------------                                                                 | ------------- |
+| `url`                        | Jenkins URL including http/https protocol                                     |               |
+| `job_name`                   | Jenkins job name to build                                                     |               |
+| `username` _(optional)_      | Jenkins username                                                              |               |
+| `api_token` _(optional)_     | Jenkins API token                                                             |               |
+| `parameters` _(optional)_    | Build parameters in JSON format e.g. `{"field1":"value1"}`                    |               |
+| `cookies` _(optional)_       | Cookies to include in HTTP requests in JSON format e.g. `{"field1":"value1"}` |               |
+| `wait` _(optional)_          | Should the runner wait for the build to finish and provide ok status          | True          |
+| `timeout` _(optional)_       | Timeout in seconds for build to complete                                      | 600           |
+| `start_wait` _(optional)_    | Should the runner wait for the build to start                                 | True          |
+| `start_timeout` _(optional)_ | Timeout in seconds for build to start                                         | 600           |
+| `interval` _(optional)_      | ow frequently in seconds to query Jenkins for build status                    | 5             |
 
 ### Outputs
 

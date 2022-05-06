@@ -28,6 +28,10 @@ inputs:
     description: "Timeout in seconds for build to complete"
     required: false
     default: "600"
+  start_wait:
+    description: "Should the runner wait for the build to start"
+    required: false
+    default: "True"
   start_timeout:
     description: "Timeout in seconds for build to start"
     required: false
